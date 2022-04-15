@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FruitAndVegetable2Fragment">
+
+    <TextView
+        android:id="@+id/fruitvege_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/fruitvege_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fruitvege_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/fruitvege_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apple"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruitvege_servings" />
+
+    <TextView
+        android:id="@+id/apple_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/apple_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="@+id/apple" />
+
+    <ImageView
+        android:id="@+id/apple_pic"
+        android:layout_width="72dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/apple_pic"
+        app:layout_constraintStart_toStartOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="@+id/apple"
+        app:srcCompat="@drawable/apple_86587" />
+
+    <TextView
+        android:id="@+id/apple_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/apple_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="@+id/apple" />
+
+    <TextView
+        android:id="@+id/apple_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/apple_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/apple"
+        app:layout_constraintTop_toBottomOf="@+id/apple_cal" />
+
+    <TextView
+        android:id="@+id/apple_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/apple_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/apple"
+        app:layout_constraintTop_toBottomOf="@+id/apple_pro" />
+
+    <TextView
+        android:id="@+id/grape"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple" />
+
+    <TextView
+        android:id="@+id/grape_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/grape_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toTopOf="@+id/grape" />
+
+    <ImageView
+        android:id="@+id/grape_pic"
+        android:layout_width="64dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/grape_pic"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toTopOf="@+id/grape"
+        app:srcCompat="@drawable/_244992_fruit_fruits_grape_107075" />
+
+    <TextView
+        android:id="@+id/grape_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/grape_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toTopOf="@+id/grape" />
+
+    <TextView
+        android:id="@+id/grape_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/grape_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toBottomOf="@+id/grape_cal" />
+
+    <TextView
+        android:id="@+id/grape_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/grape_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/grape"
+        app:layout_constraintTop_toBottomOf="@+id/grape_pro" />
+
+    <TextView
+        android:id="@+id/banana"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grape" />
+
+    <TextView
+        android:id="@+id/banana_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/banana_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/banana"
+        app:layout_constraintTop_toTopOf="@+id/banana" />
+
+    <ImageView
+        android:id="@+id/banana_pic"
+        android:layout_width="76dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/banana_pic"
+        app:layout_constraintStart_toStartOf="@+id/banana"
+        app:layout_constraintTop_toTopOf="@+id/banana"
+        app:srcCompat="@drawable/_65658" />
+
+    <TextView
+        android:id="@+id/banana_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/banana_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/banana"
+        app:layout_constraintTop_toTopOf="@+id/banana" />
+
+    <TextView
+        android:id="@+id/banana_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/banana_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/banana"
+        app:layout_constraintTop_toBottomOf="@+id/banana_cal" />
+
+    <TextView
+        android:id="@+id/banana_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/banana_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/banana"
+        app:layout_constraintTop_toBottomOf="@+id/banana_pro" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#B6BFAC"
+        android:text="@string/back_button"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banana"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

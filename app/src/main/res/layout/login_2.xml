@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/login2_Constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        tools:context=".LoginPg2">
+
+        <TextView
+            android:id="@+id/aboutMe_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutMe_Title"
+            android:textColor="#B6BFAC"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutMe_Icon" />
+
+        <View
+            android:id="@+id/divider_6"
+            android:layout_width="110dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            app:layout_constraintCircleRadius="10dp"
+            app:layout_constraintStart_toEndOf="@+id/divider_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider_5"
+            android:layout_width="110dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/divider_4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider_4"
+            android:layout_width="110dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/aboutMe_Icon"
+            android:layout_width="230dp"
+            android:layout_height="262dp"
+            android:layout_marginStart="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_5"
+            app:srcCompat="@drawable/screenshot_2" />
+
+        <TextView
+            android:id="@+id/username_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/username_title"
+            android:textColor="#B6BFAC"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutMe_ID" />
+
+        <TextView
+            android:id="@+id/gender_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/gender_title"
+            android:textColor="#B6BFAC"
+            android:textSize="24dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_title" />
+
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/username_hint"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/username_Title"
+            app:layout_constraintTop_toBottomOf="@+id/aboutMe_ID" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/weight_hint"
+            android:inputType="number|numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#FF8F8585"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_title" />
+
+        <EditText
+            android:id="@+id/height_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/height_hint"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#8F8585"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight_input" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="120dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#B6BFAC"
+            android:text="@string/next_string"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_arrow_circle_right_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height_input" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:checkedButton="@id/selectMale_button"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/gender_title"
+            app:layout_constraintTop_toBottomOf="@+id/username_Title">
+
+            <RadioButton
+                android:id="@+id/selectMale_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/male_choice" />
+
+            <RadioButton
+                android:id="@+id/selectFemale_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/female_choice" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/age_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/age_title"
+            android:textColor="#B6BFAC"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_Title" />
+
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/age_hint"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/age_title"
+            app:layout_constraintTop_toBottomOf="@+id/username_input" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

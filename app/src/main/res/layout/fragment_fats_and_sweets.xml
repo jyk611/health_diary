@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FatsAndSweetsFragment">
+
+    <ImageView
+        android:id="@+id/back_foodpyramid_button"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/back_foodpyramid_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_5821" />
+
+    <TextView
+        android:id="@+id/back_foodpyramid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/back_foodpyramid_title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fatsweet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/fatsweet_title"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fatsweet_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/fatsweet_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/icecream"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fatsweetbox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fatsweet_servings" />
+
+    <TextView
+        android:id="@+id/icecream_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/icecream_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/icecream"
+        app:layout_constraintTop_toTopOf="@+id/icecream" />
+
+    <ImageView
+        android:id="@+id/icecream_pic"
+        android:layout_width="72dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/icecream_pic"
+        app:layout_constraintStart_toStartOf="@+id/icecream"
+        app:layout_constraintTop_toTopOf="@+id/icecream"
+        app:srcCompat="@drawable/ice_cream_icon_131056" />
+
+    <TextView
+        android:id="@+id/icecream_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/icecream_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/icecream"
+        app:layout_constraintTop_toTopOf="@+id/icecream" />
+
+    <TextView
+        android:id="@+id/icecream_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/icecream_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/icecream"
+        app:layout_constraintTop_toBottomOf="@+id/icecream_cal" />
+
+    <TextView
+        android:id="@+id/icecream_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/icecream_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/icecream"
+        app:layout_constraintTop_toBottomOf="@+id/icecream_pro" />
+
+    <TextView
+        android:id="@+id/chocolate"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fatsweetbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icecream" />
+
+    <TextView
+        android:id="@+id/chocolate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/chocolate_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/chocolate"
+        app:layout_constraintTop_toTopOf="@+id/chocolate" />
+
+    <ImageView
+        android:id="@+id/chocolate_pic"
+        android:layout_width="77dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/chocolate_pic"
+        app:layout_constraintStart_toStartOf="@+id/chocolate"
+        app:layout_constraintTop_toTopOf="@+id/chocolate"
+        app:srcCompat="@drawable/chocolate_bar_sweet_icon_153113" />
+
+    <TextView
+        android:id="@+id/chocolate_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/chocolate_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/chocolate"
+        app:layout_constraintTop_toTopOf="@+id/chocolate" />
+
+    <TextView
+        android:id="@+id/chocolate_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/chocolate_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/chocolate"
+        app:layout_constraintTop_toBottomOf="@+id/chocolate_cal" />
+
+    <TextView
+        android:id="@+id/chocolate_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/chocolate_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/chocolate"
+        app:layout_constraintTop_toBottomOf="@+id/chocolate_pro" />
+
+    <TextView
+        android:id="@+id/cake"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fatsweetbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chocolate" />
+
+    <TextView
+        android:id="@+id/cake_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/cake_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toTopOf="@+id/cake" />
+
+    <ImageView
+        android:id="@+id/cake_pic"
+        android:layout_width="81dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/cake_pic"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toTopOf="@+id/cake"
+        app:srcCompat="@drawable/cake_slice_38416" />
+
+    <TextView
+        android:id="@+id/cake_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/cake_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toTopOf="@+id/cake" />
+
+    <TextView
+        android:id="@+id/cake_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/cake_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toBottomOf="@+id/cake_cal" />
+
+    <TextView
+        android:id="@+id/cake_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/cake_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cake"
+        app:layout_constraintTop_toBottomOf="@+id/cake_pro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

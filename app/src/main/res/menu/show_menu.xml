@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--we add icons-->
+    <item
+        android:id="@+id/edit_cal_record"
+        android:title="@string/edit_cal_record"
+        android:icon="@drawable/cal_record_edit" />
+    <item
+        android:id="@+id/delete_cal_record"
+        android:title="@string/delete_cal_record"
+        android:icon="@drawable/cal_record_del" />
+</menu>
+

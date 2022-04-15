@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MilkAndDiaryFragment">
+
+    <ImageView
+        android:id="@+id/back_foodpyramid_button"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/back_foodpyramid_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_5821" />
+
+    <TextView
+        android:id="@+id/back_foodpyramid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/back_foodpyramid_title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milkdiary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/milkdiary_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milkdiary_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/milkdiary_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/milkdiarybox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milkdiary_servings" />
+
+    <TextView
+        android:id="@+id/milk_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/milk_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toTopOf="@+id/milk" />
+
+    <ImageView
+        android:id="@+id/milk_pic"
+        android:layout_width="74dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/milk_pic"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toTopOf="@+id/milk"
+        app:srcCompat="@drawable/milk_icon_128618" />
+
+    <TextView
+        android:id="@+id/milk_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/milk_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toTopOf="@+id/milk" />
+
+    <TextView
+        android:id="@+id/milk_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/milk_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/milk_cal" />
+
+    <TextView
+        android:id="@+id/milk_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/milk_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/milk_pro" />
+
+    <TextView
+        android:id="@+id/cheese"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/milkdiarybox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milk" />
+
+    <TextView
+        android:id="@+id/cheese_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/cheese_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/cheese"
+        app:layout_constraintTop_toTopOf="@+id/cheese" />
+
+    <ImageView
+        android:id="@+id/cheese_pic"
+        android:layout_width="65dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/cheese_pic"
+        app:layout_constraintStart_toStartOf="@+id/cheese"
+        app:layout_constraintTop_toTopOf="@+id/cheese"
+        app:srcCompat="@drawable/cheese_food_5426" />
+
+    <TextView
+        android:id="@+id/cheese_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/cheese_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cheese"
+        app:layout_constraintTop_toTopOf="@+id/cheese" />
+
+    <TextView
+        android:id="@+id/cheese_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/cheese_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cheese"
+        app:layout_constraintTop_toBottomOf="@+id/cheese_cal" />
+
+    <TextView
+        android:id="@+id/cheese_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/cheese_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/cheese"
+        app:layout_constraintTop_toBottomOf="@+id/cheese_fat" />
+
+    <TextView
+        android:id="@+id/yogurt"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/milkdiarybox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheese" />
+
+    <TextView
+        android:id="@+id/yogurt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/yogurt_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/yogurt"
+        app:layout_constraintTop_toTopOf="@+id/yogurt" />
+
+    <ImageView
+        android:id="@+id/yogurt_pic"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/yogurt_pic"
+        app:layout_constraintStart_toStartOf="@+id/yogurt"
+        app:layout_constraintTop_toTopOf="@+id/yogurt"
+        app:srcCompat="@drawable/yogurt_1975400_1664525" />
+
+    <TextView
+        android:id="@+id/yogurt_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/yogurt_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/yogurt"
+        app:layout_constraintTop_toTopOf="@+id/yogurt" />
+
+    <TextView
+        android:id="@+id/yogurt_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/yogurt_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/yogurt"
+        app:layout_constraintTop_toBottomOf="@+id/yogurt_cal" />
+
+    <TextView
+        android:id="@+id/yogurt_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/yogurt_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/yogurt"
+        app:layout_constraintTop_toBottomOf="@+id/yogurt_pro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

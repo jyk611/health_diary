@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/ic_tools"
+        android:icon="@drawable/tools_icon"
+        android:title="Tools"/>
+    <item
+        android:id="@+id/ic_healthCategory"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Health Category"/>
+    <item
+        android:id="@+id/ic_summary"
+        android:icon="@drawable/summary"
+        android:title="Summary"
+        />
+    <item
+        android:id="@+id/ic_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"/>
+</menu>

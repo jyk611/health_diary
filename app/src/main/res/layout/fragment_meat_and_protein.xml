@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MeatAndProteinFragment">
+
+    <ImageView
+        android:id="@+id/back_foodpyramid_button"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/back_foodpyramid_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_5821" />
+
+    <TextView
+        android:id="@+id/back_foodpyramid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/back_foodpyramid_title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meatprotein_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/meatprotein_title"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meatprotein_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/meatprotein_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meat"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/meatproteinbox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meatprotein_servings" />
+
+    <TextView
+        android:id="@+id/meat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/meat_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/meat"
+        app:layout_constraintTop_toTopOf="@+id/meat" />
+
+    <ImageView
+        android:id="@+id/meat_pic"
+        android:layout_width="85dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/meat_pic"
+        app:layout_constraintStart_toStartOf="@+id/meat"
+        app:layout_constraintTop_toTopOf="@+id/meat"
+        app:srcCompat="@drawable/steak_food_meat_icon_141536" />
+
+    <TextView
+        android:id="@+id/meat_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/meat_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/meat"
+        app:layout_constraintTop_toTopOf="@+id/meat" />
+
+    <TextView
+        android:id="@+id/meat_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/meat_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/meat"
+        app:layout_constraintTop_toBottomOf="@+id/meat_cal" />
+
+    <TextView
+        android:id="@+id/meat_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/meat_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/meat"
+        app:layout_constraintTop_toBottomOf="@+id/meat_pro" />
+
+    <TextView
+        android:id="@+id/fish"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/meatproteinbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meat" />
+
+    <TextView
+        android:id="@+id/fish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/fish_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toTopOf="@+id/fish" />
+
+    <ImageView
+        android:id="@+id/fish_pic"
+        android:layout_width="78dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/fish_pic"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toTopOf="@+id/fish"
+        app:srcCompat="@drawable/fish_icon_128637" />
+
+    <TextView
+        android:id="@+id/fish_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/fish_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toTopOf="@+id/fish" />
+
+    <TextView
+        android:id="@+id/fish_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/fish_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toBottomOf="@+id/fish_cal" />
+
+    <TextView
+        android:id="@+id/fish_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/fish_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fish"
+        app:layout_constraintTop_toBottomOf="@+id/fish_pro" />
+
+    <TextView
+        android:id="@+id/egg"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/meatproteinbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fish" />
+
+    <TextView
+        android:id="@+id/egg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/egg_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/egg"
+        app:layout_constraintTop_toTopOf="@+id/egg" />
+
+    <ImageView
+        android:id="@+id/egg_pic"
+        android:layout_width="78dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/egg_pic"
+        app:layout_constraintStart_toStartOf="@+id/egg"
+        app:layout_constraintTop_toTopOf="@+id/egg"
+        app:srcCompat="@drawable/eggs_svg_icon_free_egg_icon_11553393874lnb2rcdbtf_removebg_preview" />
+
+    <TextView
+        android:id="@+id/egg_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/egg_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/egg"
+        app:layout_constraintTop_toTopOf="@+id/egg" />
+
+    <TextView
+        android:id="@+id/egg_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/egg_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/egg"
+        app:layout_constraintTop_toBottomOf="@+id/egg_cal" />
+
+    <TextView
+        android:id="@+id/egg_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/egg_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/egg"
+        app:layout_constraintTop_toBottomOf="@+id/egg_pro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

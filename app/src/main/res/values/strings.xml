@@ -1,0 +1,380 @@
+<resources>
+    <!--                                            login_1                                   -->
+    <string name="app_name">health_diary</string>
+    <string name="login_sentence_1">Welcome to Health Diary.</string>
+    <string name="login_sentence_2">We are here for your healthy.</string>
+    <string name="button_quote">Let\'s Get Started!</string>
+
+    <!--                                            login_2                                   -->
+    <string name="aboutMe_Title">About Me ~</string>
+    <string name="username_title">Username :</string>
+    <string name="username_hint">username</string>
+    <string name="age_title">Age :</string>
+    <string name="age_hint">age</string>
+    <string name="gender_title">Gender</string>
+    <string name="male_choice">Male</string>
+    <string name="female_choice">Female</string>
+    <string name="weight_hint">Weight (KG)</string>
+    <string name="height_hint">Height (M)</string>
+    <string name="next_string">Next</string>
+
+    <!--                                            login_3                                   -->
+    <string name="username_text">%s</string>
+    <string name="weight_title">Weight</string>
+    <string name="height_title">Height</string>
+    <string name="bmi_title">BMI</string>
+    <string name="user_age">%d</string>
+    <string name="user_gender">%s</string>
+    <string name="user_weight">%.2f</string>
+    <string name="user_height">%.2f</string>
+    <string name="kg_text"> KG</string>
+    <string name="m_text"> M</string>
+    <string name="user_bmi">%.2f</string>
+    <string name="bmi_unit"> kg/m²</string>
+    <string name="back_string">Back</string>
+    <string name="finish_string">Finish</string>
+
+    <!--                                         sleep_tracker                             -->
+    <string name="health_category_title">Health Categories</string>
+    <string name="sleep_tracker_Title">Sleep Tracker</string>
+    <string name="sleep_Sentence">Go to Sleep ~</string>
+    <string name="sleep_Schedule_Title">Sleep Schedule</string>
+    <string name="bedTime_Sentence">Bedtime</string>
+    <string name="wakeUp_Time">Wake-up Time</string>
+    <string name="alarm_Sentence">Alarm</string>
+    <string name="goal_Text">Goal :</string>
+    <string name="goal_hours">8 Hrs</string>
+    <string name="schedule_edit">%s</string>
+    <string name="bedTime_edit">%s</string>
+    <string name="wakeTime_edit">%s</string>
+    <string name="goal_hours_edit">%02d Hrs</string>
+
+    <!--                                         lullabies                             -->
+    <string name="lullabies_title">Lullabies</string>
+    <string name="whiteNoise_Title">WHITE NOISE</string>
+    <string name="rain_Title">Rain</string>
+    <string name="wind_Title">Wind</string>
+    <string name="thunder_Title">Thunder</string>
+    <string name="piano_Title">Piano</string>
+    <string name="nature_Title">Nature</string>
+    <string name="song_Title">Song</string>
+    <string name="lovely_Title">Lovely</string>
+    <string name="allIsFound_SongTitle">All Is Found</string>
+    <string name="withoutMe_Song">Without Me</string>
+    <string name="someoneLikeYou_Song">Someone Like You</string>
+    <string name="selectedSong_name">%s</string>
+    <string name="sleepDuration_Text">Sleep Duration</string>
+    <string name="sleepTime">00:00:00</string>
+    <string name="sleepTime_edit">%s</string>
+    <string name="wakeup_text">Click To Wake Up</string>
+    <string name="player_title">Please choose a lullabies</string>
+
+    <!--                                         Sleep Schedule                             -->
+    <string name="everyday_text">Everyday</string>
+    <string name="weekday_text">Weekday</string>
+    <string name="weekend_text">Weekend</string>
+    <string name="default_time"> - </string>
+    <string name="everyday_wakeTime_edit">%s</string>
+    <string name="weekday_wakeTime_edit">%s</string>
+    <string name="weekend_wakeTime_edit">%s</string>
+    <string name="everyday_bedTime_edit">%s</string>
+    <string name="weekday_bedTime_edit">%s</string>
+    <string name="weekend_bedTime_edit">%s</string>
+    <string name="goal_hours_text">08</string>
+    <string name="goal_hours_schedule">%02d</string>
+    <string name="hours_text">Hours</string>
+    <string name="alarm_sound">Radar</string>
+
+    <!--                                         Setting                                 -->
+    <string name="userProfile_Text">User Profile</string>
+    <string name="userAge_Text">Age</string>
+    <string name="bmi_Title">BMI</string>
+    <string name="appSetting_Text">About App</string>
+    <string name="aboutUs_Text">About Us</string>
+    <string name="aboutUs_Sentence">Welcome to use our app! We are here to take care of your body health.</string>
+    <string name="duration_Text">Duration</string>
+    <string name="bmi_sentence">%s</string>
+    <string name="setting_username">%s</string>
+    <string name="app_version">App Version :</string>
+    <string name="version_num">1.0.0.0</string>
+
+    <!--                                         USER SETTINGS EDIT WINDOW                       -->
+    <string name="edit_gender">Gender :</string>
+    <string name="edit_age">Age :</string>
+    <string name="edit_weight">Weight :</string>
+    <string name="edit_height">Height :</string>
+    <string name="edit_age_hint">new age</string>
+    <string name="edit_weight_hint">weight (KG)</string>
+    <string name="edit_height_hint">height (M)</string>
+
+    <!--                                         Health Category                                 -->
+    <string name="workout_Title">Workout</string>
+    <string name="waterIntake_Title">Water Intake</string>
+    <string name="foodPlan_Title">Food Plan</string>
+    <string name="wakeTime_Text">Wake Time :</string>
+    <string name="bedTime_Text">Bed Time :</string>
+    <string name="wakeTime_edit_healthCat">%s</string>
+    <string name="bedTime_edit_healthCat">%s</string>
+    <string name="timeRemaining_amount">-</string>
+    <string name="timeRemaining_amount_edit">%s</string>
+    <string name="alarmStatus_on">On</string>
+    <string name="alarmStatus_off">Off</string>
+    <string name="alarmStatus_Sentence">Alarm Status :</string>
+    <string name="workoutPlan_Sentence">Workout Type</string>
+    <string name="waterIntake_Sentence">Water Intake</string>
+    <string name="waterRemain_Sentence">Remaining</string>
+    <string name="nextIntake_Sentence">Next Intake Time</string>
+    <string name="caloriesIntake_Sentence">Calories Intake</string>
+    <string name="nutritionTable_Sentence">Food Nutrition Table</string>
+    <string name="footSteps_Text">Foot Steps</string>
+
+    <string name="empty">Empty</string>
+
+    <!--                                         Sleep Summary                                 -->
+    <string name="backSummary_Text">Summary</string>
+    <string name="sleepDuration_SummaryText">Sleep Duration</string>
+    <string name="week_Text">Week</string>
+    <string name="month_Text">Month</string>
+    <string name="year_Text">Year</string>
+    <string name="sleepSummary_Text">Sleep Summary</string>
+    <string name="sleepSummaryDetails_Title">Details</string>
+    <string name="average_Text">Average</string>
+    <string name="sleepScore_Text">Sleep Grade</string>
+    <string name="sleepAt_Text">Sleep At</string>
+    <string name="wakeAt_Text">Wake-up At</string>
+    <string name="editUser_Text">Edit User Profile</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="confirm_text">Confirm</string>
+
+    <string-array name="duration_array">
+        <item>30 Mins</item>
+        <item>45 Mins</item>
+        <item>1 Hour</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--                                         Tools                                -->
+    <string name="tools">Tools</string>
+    <string name="bmi_calculator_title">BMI Calculator</string>
+    <string name="calories_calculator_title">Calories Calculator</string>
+    <string name="water_intake_calculator_title">Water Intake Calculator</string>
+
+    <!--    bmi calculator-->
+    <string name="gentle">Gentle</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="height">Height</string>
+    <string name="cm">CM</string>
+    <string name="weight">Weight</string>
+    <string name="kg">KG</string>
+    <string name="calculate">Calculate</string>
+    <string name="body_mass_index_bmi_is_a_single_screening_tool_that_helps_determine_if_you_are_at_healthy_weight_for_your_body_size">Body Mass Index(BMI) is a single screening tool that helps determine if you are at healthy weight for your body size.</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+
+    <!--    calories calculator-->
+    <string name="back_tools_button">back_tools</string>
+    <string name="back_tools_title">Tools</string>
+    <string name="calories_calc_instruction">Fill in your details to calculate</string>
+    <string name="calories_calc_button">CALCULATE</string>
+    <string name="calories_calc_gender">Gender</string>
+    <string name="calories_calc_female">Female</string>
+    <string name="calories_calc_male">Male</string>
+    <string name="calories_calc_age">Age (Year)</string>
+    <string name="calories_calc_height">Height (CM)</string>
+    <string name="calories_calc_weight">Weight (KG)</string>
+    <string name="calories_calc_activity">Activity</string>
+    <string name="input_caloris_activity">Activity</string>
+    <string name="calories_pic">calories_pic</string>
+    <string name="estimate_cal_need1">Estimate Daily Calories Needed</string>
+    <string name="estimate_cal_need2">You need total of</string>
+    <string name="estimate_cal_need3">per day</string>
+    <string name="estimate_cal_need4">kcal</string>
+    <string name="estimate_cal_result">%s</string>
+
+    <!--     water intake tool calculator-->
+    <string name="water_intake_weight_question">Weight</string>
+    <string name="water_intake_activity_question">Activity</string>
+    <string name="water_intake_climate_question">Climate</string>
+    <string name="calculator_icon">calculator_icon</string>
+    <string name="water_intake_calculate_button">Calculate</string>
+    <string name="water_intake_weight_unit">KG</string>
+    <string name="water_intake_activity_hint">Moderate</string>
+    <string name="water_intake_climate_hint">Cold</string>
+    <string name="result">Result</string>
+    <string name="water_required">Water Required</string>
+    <string name="water_intake_result">%s</string>
+    <string name="water_intake_result_unit">ml / day</string>
+    <string name="water_intake_result2">%s</string>
+    <string name="water_intake_result_unit2">Cups</string>
+    <string name="water_required_tips">Drink your way to better health.</string>
+    <string name="water_required_tips2">Staying hydrated is crucial for health and well being!</string>
+
+    <!--    home page-->
+    <string name="app_title">Health Diary</string>
+    <string name="healthy_tip1">Monitor the mental and physical</string>
+    <string name="healthy_tip2">health of the users in</string>
+    <string name="healthy_tip3">their daily live</string>
+    <string name="workout_timer_unit">Days left</string>
+    <string name="exercise_summary">Exercise Summary</string>
+    <string name="water_timer_unit">ml left</string>
+    <string name="water_intake_summary">Water Intake Summary</string>
+    <string name="hour_unit">hr</string>
+    <string name="average_sleep">Average Sleep</string>
+    <string name="tomorrow_alarm">Tomorrow Alarm</string>
+    <string name="sleep_summary">Sleep Summary</string>
+    <string name="user_profile_title">User Profile</string>
+
+    <string name="weight_unit">kg</string>
+
+    <string name="height_unit">cm</string>
+    <!--    Home -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="home">Home</string>
+    <string name="categories">Categories</string>
+    <string name="sleep_tracker_title">Sleep Tracker</string>
+    <string name="workout_title">Workouts</string>
+    <string name="water_intake_title">Water Intake</string>
+    <string name="food_plan_title">Food Plan</string>
+
+
+    <string name="setting">Setting</string>
+    <!--    Calories-->
+    <string name="next_button">NEXT</string>
+    <string name="back_button">BACK</string>
+    <string name="fruitvege_title"><u><![CDATA[Fruits & Vegetables]]></u></string>
+    <string name="fruitvege_servings">3-5 servings per day</string>
+    <string name="carrot_name"><u>Carrot (100 grams)</u></string>
+    <string name="carrot_pic">carrot_pic</string>
+    <string name="carrot_cal">Calories: 41cal</string>
+    <string name="carrot_pro">Protein: 0.9g</string>
+    <string name="carrot_fat">Fat: 0.2g</string>
+    <string name="lettuce_name"><u>Lettuce (100 grams)</u></string>
+    <string name="lettuce_pic">lettuce_pic</string>
+    <string name="lettuce_cal">Calories: 15cal</string>
+    <string name="lettuce_pro">Protein: 1.4g</string>
+    <string name="lettuce_fat">Fat: 0.2g</string>
+    <string name="broccoli_name"><u>Broccoli (100 grams)</u></string>
+    <string name="broccoli_pic">broccoli_pic</string>
+    <string name="broccoli_cal">Calories: 31cal</string>
+    <string name="broccoli_pro">Protein: 3.7g</string>
+    <string name="broccoli_fat">Fat: 0.8g</string>
+    <string name="apple_name"><u>Apple (100 grams)</u></string>
+    <string name="apple_pic">apple_pic</string>
+    <string name="apple_cal">Calories: 52cal</string>
+    <string name="apple_pro">Protein: 0.6g</string>
+    <string name="apple_fat">Fat: 0.2g</string>
+    <string name="grape_name"><u>Grape (100 grams)</u></string>
+    <string name="grape_pic">grape_pic</string>
+    <string name="grape_cal">Calories: 67cal</string>
+    <string name="grape_pro">Protein: 0.6g</string>
+    <string name="grape_fat">Fat: 0.4g</string>
+    <string name="banana_name"><u>Banana (100 grams)</u></string>
+    <string name="banana_pic">banana_pic</string>
+    <string name="banana_cal">Calories: 89cal</string>
+    <string name="banana_pro">Protein: 0.3g</string>
+    <string name="banana_fat">Fat: 1.1g</string>
+    <string name="milkdiary_title"><u><![CDATA[Milk & Dairy]]></u></string>
+    <string name="milkdiary_servings">2-3 servings per day</string>
+    <string name="milk_name"><u>Milk (100 grams)</u></string>
+    <string name="milk_pic">milk_pic</string>
+    <string name="milk_cal">Calories: 42cal</string>
+    <string name="milk_pro">Protein: 3.4g</string>
+    <string name="milk_fat">Fat: 1g</string>
+    <string name="cheese_name"><u>Cheese (100 grams)</u></string>
+    <string name="cheese_pic">cheese_pic</string>
+    <string name="cheese_cal">Calories: 402cal</string>
+    <string name="cheese_pro">Protein: 33g</string>
+    <string name="cheese_fat">Fat: 25g</string>
+    <string name="yogurt_name"><u>Yogurt (100 grams)</u></string>
+    <string name="yogurt_pic">yogurt_pic</string>
+    <string name="yogurt_cal">Calories: 59cal</string>
+    <string name="yogurt_pro">Protein: 3.5g</string>
+    <string name="yogurt_fat">Fat: 0.4g</string>
+    <string name="fatsweet_title"><u><![CDATA[Fats & Sweets]]></u></string>
+    <string name="fatsweet_servings">eat sparingly</string>
+    <string name="icecream_name"><u>Ice Cream (100 grams)</u></string>
+    <string name="icecream_pic">icecream_pic</string>
+    <string name="icecream_cal">Calories: 207cal</string>
+    <string name="icecream_pro">Protein: 3.5g</string>
+    <string name="icecream_fat">Fat: 11g</string>
+    <string name="chocolate_name"><u>Chocolate (100 grams)</u></string>
+    <string name="chocolate_cal">Calories: 546cal</string>
+    <string name="chocolate_pic">chocolate_pic</string>
+    <string name="chocolate_pro">Protein: 4.9g</string>
+    <string name="chocolate_fat">Fat: 31g</string>
+    <string name="cake_name"><u>Cake (100 grams)</u></string>
+    <string name="cake_pic">cake_pic</string>
+    <string name="cake_cal">Calories: 257cal</string>
+    <string name="cake_pro">Protein: 6g</string>
+    <string name="cake_fat">Fat: 0.3g</string>
+    <string name="meatprotein_servings">2-3 servings per day</string>
+    <string name="meatprotein_title"><u><![CDATA[Meat & Protein]]></u></string>
+    <string name="meat_name"><u>Meat (100 grams)</u></string>
+    <string name="meat_pic">meat_pic</string>
+    <string name="meat_cal">Calories: 143cal</string>
+    <string name="meat_pro">Protein: 26g</string>
+    <string name="meat_fat">Fat: 3.5g</string>
+    <string name="fish_name"><u>Fish (100 grams)</u></string>
+    <string name="fish_pic">fish_pic</string>
+    <string name="fish_cal">Calories: 206cal</string>
+    <string name="fish_pro">Protein: 22g</string>
+    <string name="fish_fat">Fat: 12g</string>
+    <string name="egg_name"><u>Egg (100 grams)</u></string>
+    <string name="egg_pic">egg_pic</string>
+    <string name="egg_cal">Calories: 155cal</string>
+    <string name="egg_pro">Protein: 13g</string>
+    <string name="egg_fat">Fat: 11g</string>
+    <string name="ricegrain_title"><u><![CDATA[Rice & Grains]]></u></string>
+    <string name="ricegrain_servings">6-11 servings per day</string>
+    <string name="rice_name"><u>Rice (100 grams)</u></string>
+    <string name="rice_pic">rice_pic</string>
+    <string name="rice_cal">Calories: 130cal</string>
+    <string name="rice_pro">Protein: 2.7g</string>
+    <string name="rice_fat">Fat: 0.3g</string>
+    <string name="noodle_name"><u>Noodle (100 grams)</u></string>
+    <string name="noodle_pic">noodle_pic</string>
+    <string name="noodle_cal">Calories: 138cal</string>
+    <string name="noodle_pro">Protein: 4.5g</string>
+    <string name="noodle_fat">Fat: 2.1g</string>
+    <string name="bread_name"><u>Bread (100 grams)</u></string>
+    <string name="bread_pic">bread_pic</string>
+    <string name="bread_cal">Calories: 265cal</string>
+    <string name="bread_pro">Protein: 9g</string>
+    <string name="bread_fat">Fat: 3.2g</string>
+    <string name="fatsweet_pyramid">fatsweet_pyramid</string>
+    <string name="ricegrain_pyramid">ricegrain_pyramid</string>
+    <string name="meatprotein_pyramid">meatprotein_pyramid</string>
+    <string name="milkdiary_pyramid">milkdiary_pyramid</string>
+    <string name="fruitvege_pyramid">fruitvege_pyramid</string>
+    <string name="foodpyramid_title"><u>Food Pyramid</u></string>
+    <string name="back_foodplan_button">back_foodplan</string>
+    <string name="back_foodplan_title">Food Plan</string>
+    <string name="back_foodpyramid_button">back_foodpyramid</string>
+    <string name="back_foodpyramid_title">Food Pyramid</string>
+    <string name="back_healthcategory_button">back_healthcategory</string>
+    <string name="back_healthcategory_title">Health Category</string>
+    <string name="foodplan_quote1"><![CDATA[Healthy Eating & Exercise]]></string>
+    <string name="foodplan_quote2">foodplan_quote2</string>
+    <string name="foodplan_quote3">Healthy Lifestyle !</string>
+    <string name="lightbulb_pic">lightbulb_pic</string>
+    <string name="musclearm_pic">musclearm_pic</string>
+    <string name="foodpyramid_pagebox">foodpyramid_pagebox</string>
+    <string name="caloriestracker_pagebox">caloriestracker_pagebox</string>
+    <string name="foodplan_title">Food Plan</string>
+    <string name="foodplan_pic">foodplan_pic</string>
+    <string name="calendar_pic">calendar_pic</string>
+    <string name="caloriestracker_date">Display current date</string>
+    <string name="total_cal_intake_title"><u>Calories Intake Record</u></string>
+    <string name="calories_tracker_title">Calories Tracker</string>
+    <string name="calories_add">cal_record_add_button</string>
+    <string name="edit_cal_record">Edit Record</string>
+    <string name="delete_cal_record">Delete</string>
+    <string name="fMenus">fMenu</string>
+    <string name="total_cal_intake_result">%s</string>
+    <string name="total_cal_intake_title2">kcal</string>
+    <string name="welcome_to_food_plan_title">Welcome to Food Plan</string>
+    <string name="welcome_to_food_plan_button">CONTINUE</string>
+</resources>

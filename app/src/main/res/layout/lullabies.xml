@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/lullabies_Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:textAlignment="viewEnd">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/whiteNoise_CardView"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/whiteNoise_CardViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/whiteNoise_Title"
+                android:textColor="#919191"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/rain_Button"
+                    android:layout_width="115dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="80dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/rain_Title"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/rain_icon"
+                    app:iconSize="30dp"
+                    app:iconTint="#79CFE1"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/wind_Button"
+                    android:layout_width="115dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/wind_Title"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_air_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#79CFE1"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/nature_Button"
+                    android:layout_width="115dp"
+                    android:layout_height="78dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/nature_Title"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="normal|bold|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_local_florist_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#8BC34A"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/piano_button"
+                    android:layout_width="115dp"
+                    android:layout_height="78dp"
+                    android:layout_marginRight="80dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/piano_Title"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="normal|bold|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_piano_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#000000"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/song_CardView"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiteNoise_CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_CardViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/song_Title"
+                android:textColor="#919191"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/allIsFound_Button"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/allIsFound_SongTitle"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="normal|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_music_note_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#D4A55F"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/lovely_Button"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/lovely_Title"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="normal|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_music_note_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#D4A55F"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/withoutMe_Button"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/withoutMe_Song"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    android:textStyle="normal|italic"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_music_note_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#D4A55F"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/someoneLikeYou_Button"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/someoneLikeYou_Song"
+                    android:textAllCaps="false"
+                    android:textColor="#919191"
+                    android:textSize="12sp"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/ic_baseline_music_note_24"
+                    app:iconSize="30dp"
+                    app:iconTint="#D4A55F"
+                    app:strokeColor="#8A8A8A"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/playLullabies_CardView"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/song_CardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lullabiesSelected_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/player_title"
+                android:textColor="#919191"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/duration_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/duration_Text"
+                    android:textColor="#919191"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <Spinner
+                    android:id="@+id/playDuration_Spinner"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E6E1E1" />
+
+                <ImageButton
+                    android:id="@+id/play_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+                <ImageButton
+                    android:id="@+id/pause_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:srcCompat="@drawable/ic_baseline_pause_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/sleepDuration_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/sleepDuration_Text"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playLullabies_CardView" />
+
+    <Button
+        android:id="@+id/wakeUp_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#B6BFAC"
+        android:text="@string/wakeup_text"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleepDuration_Title" />
+
+    <TextView
+        android:id="@+id/sleepDuration_Time"
+        android:layout_width="95dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_border"
+        android:text="@string/sleepTime"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/sleepDuration_Title"
+        app:layout_constraintTop_toBottomOf="@+id/playLullabies_CardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

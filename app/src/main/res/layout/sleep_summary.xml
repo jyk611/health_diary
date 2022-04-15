@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sleepDetails_SummaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sleepSummaryDetails_Title"
+            android:textColor="#B6BFAC"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listView" />
+
+        <Button
+            android:id="@+id/chooseWeekSummary_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/week_Text"
+            android:textColor="#B6BFAC"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/chooseMonthSummary_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="75dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/month_Text"
+            android:textColor="#B6BFAC"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chooseWeekSummary_Button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sleepDuration_SumarryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sleepDuration_Text"
+            android:textColor="#B6BFAC"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chooseWeekSummary_Button" />
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleepDetails_SummaryTitle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sleepScore_CardView"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="10dp"
+                        app:strokeColor="#8A8A8A"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/average_Text1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/average_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepScore_Text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/sleepScore_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepScore"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="TextView"
+                                    android:textColor="#919191"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold|italic" />
+
+                                <ImageView
+                                    android:id="@+id/sleepScore_Icon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="125dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:srcCompat="@drawable/bed_icon"
+                                    app:tint="#B6BFAC" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sleepDuration_CardView"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/average_Text2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/average_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepDuration_Text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/sleepDuration_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepDuration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="08 h 42 min"
+                                    android:textColor="#919191"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold|italic" />
+
+                                <ImageView
+                                    android:id="@+id/sleepDuration_Icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="130dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:srcCompat="@drawable/ic_baseline_access_time_filled_24"
+                                    app:tint="#B6BFAC" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sleepAt_CardView"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/average_Text3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/average_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepAt_Text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/sleepAt_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/sleepAt_Time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="TextView"
+                                    android:textColor="#919191"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold|italic" />
+
+                                <ImageView
+                                    android:id="@+id/sleepAt_Icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="125dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:srcCompat="@drawable/ic_baseline_nightlight_24"
+                                    app:tint="#B6BFAC" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/wakeAt_CardView"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/average_Text4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/average_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/wakeAt_Text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:text="@string/wakeAt_Text"
+                                    android:textColor="#919191"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold|italic" />
+
+                                <TextView
+                                    android:id="@+id/wakeAt_Time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="TextView"
+                                    android:textColor="#919191"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold|italic" />
+
+                                <ImageView
+                                    android:id="@+id/wakeAt_Icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="130dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:srcCompat="@drawable/ic_baseline_wb_sunny_24"
+                                    app:tint="#B6BFAC" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:fastScrollAlwaysVisible="true"
+            android:fastScrollEnabled="true"
+            android:isScrollContainer="true"
+            android:scrollbarSize="6dp"
+            android:scrollbars="vertical"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleepDuration_SumarryTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterIntakeCalculatorActivity">
+
+
+    <TextView
+        android:id="@+id/waterIntakeCalculatorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/water_intake_calculator_title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/waterIntakeCalculatorBox"
+        android:layout_width="264dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/background_b6bfac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TextView
+        android:id="@+id/climateQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/water_intake_climate_question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeActivityQuestion" />
+
+    <TextView
+        android:id="@+id/waterIntakeWeightQuestionUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/water_intake_weight_unit"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/waterCalculatorInputKilogram"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorBox" />
+
+    <TextView
+        android:id="@+id/waterIntakeWeightQuestion"
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/water_intake_weight_question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorBox" />
+
+    <TextView
+        android:id="@+id/waterIntakeActivityQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/water_intake_activity_question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeWeightQuestion" />
+
+    <ImageView
+        android:id="@+id/iconWaterIntakeCalculator"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/calculator_icon"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorBox"
+        app:srcCompat="@drawable/calculator_tools" />
+
+    <EditText
+        android:id="@+id/waterCalculatorInputKilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/waterIntakeWeightQuestion"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorBox"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/waterIntakeActivityOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/water_intake_activity_hint"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintStart_toEndOf="@+id/waterIntakeActivityQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeWeightQuestionUnit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/waterIntakeClimateOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/water_intake_climate_hint"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintStart_toEndOf="@+id/climateQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeActivityOption"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/water_intake_calculate_button"
+        android:textColor="#515151"
+        app:layout_constraintBottom_toBottomOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintEnd_toEndOf="@+id/waterIntakeCalculatorBox"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorBox" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/result"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconWaterDrop"
+        android:layout_width="33dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintStart_toEndOf="@+id/result"
+        app:srcCompat="@drawable/water_drop" />
+
+    <TextView
+        android:id="@+id/waterIntakeCalculatorResultBox"
+        android:layout_width="351dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/background_c9c9c9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeCalculatorBox" />
+
+    <TextView
+        android:id="@+id/waterRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/water_required"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorResultBox" />
+
+    <TextView
+        android:id="@+id/waterIntakeResult"
+        android:layout_width="55dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorResultBox" />
+
+    <TextView
+        android:id="@+id/waterIntakeResultUnit"
+        android:layout_width="93dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/water_intake_result_unit"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintStart_toEndOf="@+id/waterIntakeResult" />
+
+    <TextView
+        android:id="@+id/waterIntakeResult2"
+        android:layout_width="52dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintTop_toBottomOf="@+id/waterIntakeResult" />
+
+    <TextView
+        android:id="@+id/waterIntakeResultUnit2"
+        android:layout_width="65dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/water_intake_result_unit2"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/waterIntakeResult2"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeResult2"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorResultBox" />
+
+    <TextView
+        android:id="@+id/waterRequiredTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/water_required_tips"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintTop_toTopOf="@+id/waterIntakeCalculatorResultBox" />
+
+    <TextView
+        android:id="@+id/waterRequiredTips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/water_required_tips2"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/waterIntakeCalculatorResultBox"
+        app:layout_constraintTop_toBottomOf="@+id/waterRequiredTips" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

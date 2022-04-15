@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.health_diary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Health_diary">
+        <activity
+            android:name=".FoodPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginPg2" />
+        <activity android:name=".LoginPg3" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".HealthCategoryActivity" />
+        <activity android:name=".SleepTracker" />
+        <activity android:name=".SleepSchedule" />
+        <activity android:name=".Lullabies" />
+        <activity android:name=".SleepSummaryActivity" />
+        <activity android:name=".CaloriesCalculatorActivity" />
+        <activity android:name=".BMICalculatorActivity" />
+        <activity android:name=".WaterIntakeCalculatorActivity" />
+
+        <service android:name=".TimerFunc" />
+    </application>
+
+</manifest>

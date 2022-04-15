@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FruitAndVegetable1Fragment">
+
+    <TextView
+        android:id="@+id/back_foodpyramid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/back_foodpyramid_title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_foodpyramid_button"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/back_foodpyramid_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_5821" />
+
+    <TextView
+        android:id="@+id/fruitvege_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/fruitvege_title"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fruitvege_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/fruitvege_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carrot"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruitvege_servings" />
+
+    <TextView
+        android:id="@+id/carrot_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/carrot_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toTopOf="@+id/carrot" />
+
+    <ImageView
+        android:id="@+id/carrot_pic"
+        android:layout_width="76dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/carrot_pic"
+        app:layout_constraintStart_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toTopOf="@+id/carrot"
+        app:srcCompat="@drawable/carrothanddrawnvegetable_114680" />
+
+    <TextView
+        android:id="@+id/carrot_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/carrot_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toTopOf="@+id/carrot" />
+
+    <TextView
+        android:id="@+id/carrot_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/carrot_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toBottomOf="@+id/carrot_cal" />
+
+    <TextView
+        android:id="@+id/carrot_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/carrot_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/carrot"
+        app:layout_constraintTop_toBottomOf="@+id/carrot_pro" />
+
+    <TextView
+        android:id="@+id/lettuce"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carrot" />
+
+    <TextView
+        android:id="@+id/lettuce_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/lettuce_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/lettuce"
+        app:layout_constraintTop_toTopOf="@+id/lettuce" />
+
+    <ImageView
+        android:id="@+id/lettuce_pic"
+        android:layout_width="76dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/lettuce_pic"
+        app:layout_constraintStart_toStartOf="@+id/lettuce"
+        app:layout_constraintTop_toTopOf="@+id/lettuce"
+        app:srcCompat="@drawable/lettuce_icon_icons_com_62957" />
+
+    <TextView
+        android:id="@+id/lettuce_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/lettuce_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lettuce"
+        app:layout_constraintTop_toTopOf="@+id/lettuce" />
+
+    <TextView
+        android:id="@+id/lettuce_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/lettuce_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lettuce"
+        app:layout_constraintTop_toBottomOf="@+id/lettuce_cal" />
+
+    <TextView
+        android:id="@+id/lettuce_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/lettuce_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/lettuce"
+        app:layout_constraintTop_toBottomOf="@+id/lettuce_pro" />
+
+    <TextView
+        android:id="@+id/broccoli"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fruitvegebox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lettuce" />
+
+    <TextView
+        android:id="@+id/broccoli_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/broccoli_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/broccoli"
+        app:layout_constraintTop_toTopOf="@+id/broccoli" />
+
+    <ImageView
+        android:id="@+id/broccoli_pic"
+        android:layout_width="81dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/broccoli_pic"
+        app:layout_constraintStart_toStartOf="@+id/broccoli"
+        app:layout_constraintTop_toTopOf="@+id/broccoli"
+        app:srcCompat="@drawable/broccoli_icon_126257" />
+
+    <TextView
+        android:id="@+id/broccoli_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/broccoli_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/broccoli"
+        app:layout_constraintTop_toTopOf="@+id/broccoli" />
+
+    <TextView
+        android:id="@+id/broccoli_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/broccoli_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/broccoli"
+        app:layout_constraintTop_toBottomOf="@+id/broccoli_cal" />
+
+    <TextView
+        android:id="@+id/broccoli_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:text="@string/broccoli_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/broccoli"
+        app:layout_constraintTop_toBottomOf="@+id/broccoli_pro" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#B6BFAC"
+        android:text="@string/next_button"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/broccoli"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

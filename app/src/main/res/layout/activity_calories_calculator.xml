@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundTint="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calories_calculator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calories_calculator_title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calories_calc_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="109dp"
+        android:text="@string/calories_calc_instruction"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calories_calc_box1"
+        android:layout_width="358dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_b6bfac"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_instruction" />
+
+    <TextView
+        android:id="@+id/calories_calc_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/calories_calc_gender"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box1"
+        app:layout_constraintTop_toTopOf="@+id/calories_calc_box1" />
+
+    <RadioGroup
+        android:id="@+id/gender_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@+id/calories_calc_male"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/calories_calc_gender"
+        app:layout_constraintTop_toTopOf="@+id/calories_calc_box1">
+
+        <RadioButton
+            android:id="@+id/calories_calc_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:buttonTint="#000000"
+            android:text="@string/calories_calc_male"
+            android:textColorHighlight="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/calories_calc_gender"
+            app:layout_constraintTop_toTopOf="@+id/calories_calc_box1"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioButton
+            android:id="@+id/calories_calc_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="@string/calories_calc_female"
+            android:textColorHighlight="#000000"
+            android:textColorLink="#000000"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/calories_calc_male"
+            app:layout_constraintTop_toTopOf="@+id/calories_calc_box1" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/calories_calc_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calories_calc_age"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box1"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_gender" />
+
+    <EditText
+        android:id="@+id/input_calories_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/calories_calc_age"
+        app:layout_constraintTop_toTopOf="@+id/calories_calc_box1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/calories_calc_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calories_calc_height"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box1"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_age" />
+
+    <EditText
+        android:id="@+id/input_calories_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/calories_calc_height"
+        app:layout_constraintTop_toBottomOf="@+id/input_calories_age"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/calories_calc_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calories_calc_weight"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box1"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_height" />
+
+    <EditText
+        android:id="@+id/input_calories_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/calories_calc_weight"
+        app:layout_constraintTop_toBottomOf="@+id/input_calories_height"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/calories_calc_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/calories_calc_activity"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box1"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_weight" />
+
+    <Spinner
+        android:id="@+id/input_calories_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:hint="@string/input_caloris_activity"
+        android:inputType="text"
+        android:minHeight="50dp"
+        app:layout_constraintStart_toEndOf="@+id/calories_calc_activity"
+        app:layout_constraintTop_toBottomOf="@+id/input_calories_weight"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calories_calc_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:backgroundTint="#434f37"
+        android:text="@string/calories_calc_button"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_box1" />
+
+    <TextView
+        android:id="@+id/calories_calc_box2"
+        android:layout_width="369dp"
+        android:layout_height="159dp"
+        android:background="@drawable/background_9a9c98"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_button" />
+
+    <ImageView
+        android:id="@+id/calories_pic"
+        android:layout_width="31dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/calories_pic"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box2"
+        app:layout_constraintTop_toTopOf="@+id/calories_calc_box2"
+        app:srcCompat="@drawable/fire_icon" />
+
+    <TextView
+        android:id="@+id/estimate_cal_need1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/estimate_cal_need1"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/calories_pic"
+        app:layout_constraintTop_toBottomOf="@+id/calories_calc_button" />
+
+    <TextView
+        android:id="@+id/estimate_cal_need2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/estimate_cal_need2"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box2"
+        app:layout_constraintTop_toBottomOf="@+id/estimate_cal_need1" />
+
+    <TextView
+        android:id="@+id/estimate_cal_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="6dp"
+        android:text="0000"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/estimate_cal_need3"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box2"
+        app:layout_constraintTop_toBottomOf="@+id/estimate_cal_need2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/estimate_cal_need3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/estimate_cal_need3"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_calc_box2"
+        app:layout_constraintStart_toStartOf="@+id/calories_calc_box2" />
+
+    <TextView
+        android:id="@+id/estimate_cal_need4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/estimate_cal_need4"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/calories_calc_box2"
+        app:layout_constraintStart_toEndOf="@+id/estimate_cal_result" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

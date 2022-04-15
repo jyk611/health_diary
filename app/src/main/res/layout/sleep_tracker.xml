@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sleepTracker_Constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B6BFAC">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sleep_tracker_icon" />
+
+        <Button
+            android:id="@+id/sleep_Button"
+            android:layout_width="208dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#B6BFAC"
+            android:text="@string/sleep_Sentence"
+            android:textColor="#515151"
+            android:textSize="14dp"
+            android:textStyle="normal|bold|italic"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentTime_Text" />
+
+        <TextView
+            android:id="@+id/sleepShedule_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/sleep_Schedule_Title"
+            android:textColor="#B6BFAC"
+            android:textSize="24dp"
+            android:textStyle="normal|bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleep_Button" />
+
+        <TextClock
+            android:id="@+id/currentTime_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="20dp"
+            android:format12Hour="hh:mm:ss a"
+            android:textColor="#919191"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/schedule_cardView"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#B6BFAC"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sleepShedule_Title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/schedule_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/schedule_edit"
+                    android:textColor="@color/black"
+                    android:textSize="26dp"
+                    android:textStyle="normal|bold|italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bedTime_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/bedTime_Sentence"
+                        android:textColor="#545454"
+                        android:textSize="22dp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bed_icon" />
+
+                    <TextView
+                        android:id="@+id/bedTime"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="77dp"
+                        android:layout_weight="1"
+                        android:text="@string/bedTime_edit"
+                        android:textColor="#545454"
+                        android:textSize="24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wakeTime_Title"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/wakeUp_Time"
+                        android:textColor="#545454"
+                        android:textSize="22dp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/bell_logo"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/wakeup_icon" />
+
+                    <TextView
+                        android:id="@+id/wakeUp_Time"
+                        android:layout_width="145dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/wakeTime_edit"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/alarm_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/alarm_Sentence"
+                        android:textSize="22dp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/alarm" />
+
+                    <TextView
+                        android:id="@+id/alarm_Sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="108dp"
+                        android:text="@string/alarm_sound"
+                        android:textSize="24dp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/goal_Hours"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/goal_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="260dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/goal_Text"
+                        android:textColor="#545454"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/goal_HoursText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/goal_hours_edit"
+                        android:textColor="#545454"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

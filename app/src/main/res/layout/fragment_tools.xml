@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/toolsBmiCalculatorBox"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/bmi_calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/toolsCaloriesCalculatorBox"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/calories_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/toolsBmiCalculatorBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/toolsWaterIntakeCalculatorBox"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/water_intake_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolsBmiCalculatorBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

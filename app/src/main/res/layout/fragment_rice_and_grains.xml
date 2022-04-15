@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RiceAndGrainsFragment">
+
+    <ImageView
+        android:id="@+id/back_foodpyramid_button"
+        android:layout_width="37dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/back_foodpyramid_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_5821" />
+
+    <TextView
+        android:id="@+id/back_foodpyramid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/back_foodpyramid_title"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ricegrain_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/ricegrain_title"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ricegrain_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/ricegrain_servings"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rice"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ricegrainbox"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ricegrain_servings" />
+
+    <TextView
+        android:id="@+id/rice_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/rice_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/rice"
+        app:layout_constraintTop_toTopOf="@+id/rice" />
+
+    <ImageView
+        android:id="@+id/rice_pic"
+        android:layout_width="90dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/rice_pic"
+        app:layout_constraintStart_toStartOf="@+id/rice"
+        app:layout_constraintTop_toTopOf="@+id/rice"
+        app:srcCompat="@drawable/rice_bowl_food_icon_141544" />
+
+    <TextView
+        android:id="@+id/rice_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/rice_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rice"
+        app:layout_constraintTop_toTopOf="@+id/rice" />
+
+    <TextView
+        android:id="@+id/rice_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/rice_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rice"
+        app:layout_constraintTop_toBottomOf="@+id/rice_cal" />
+
+    <TextView
+        android:id="@+id/rice_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/rice_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/rice"
+        app:layout_constraintTop_toBottomOf="@+id/rice_pro" />
+
+    <TextView
+        android:id="@+id/noodle"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ricegrainbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rice" />
+
+    <TextView
+        android:id="@+id/noodle_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/noodle_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/noodle"
+        app:layout_constraintTop_toTopOf="@+id/noodle" />
+
+    <ImageView
+        android:id="@+id/noodle_pic"
+        android:layout_width="86dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/noodle_pic"
+        app:layout_constraintStart_toStartOf="@+id/noodle"
+        app:layout_constraintTop_toTopOf="@+id/noodle"
+        app:srcCompat="@drawable/noodle_japan_food_icon_141539" />
+
+    <TextView
+        android:id="@+id/noodle_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/noodle_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/noodle"
+        app:layout_constraintTop_toTopOf="@+id/noodle" />
+
+    <TextView
+        android:id="@+id/noodle_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/noodle_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/noodle"
+        app:layout_constraintTop_toBottomOf="@+id/noodle_cal" />
+
+    <TextView
+        android:id="@+id/noodle_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/noodle_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/noodle"
+        app:layout_constraintTop_toBottomOf="@+id/noodle_pro" />
+
+    <TextView
+        android:id="@+id/bread"
+        android:layout_width="321dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ricegrainbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noodle" />
+
+    <TextView
+        android:id="@+id/bread_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/bread_name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toTopOf="@+id/bread" />
+
+    <ImageView
+        android:id="@+id/bread_pic"
+        android:layout_width="95dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/bread_pic"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toTopOf="@+id/bread"
+        app:srcCompat="@drawable/bread_food_4690" />
+
+    <TextView
+        android:id="@+id/bread_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/bread_cal"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toTopOf="@+id/bread" />
+
+    <TextView
+        android:id="@+id/bread_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/bread_pro"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toBottomOf="@+id/bread_cal" />
+
+    <TextView
+        android:id="@+id/bread_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="@string/bread_fat"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/bread"
+        app:layout_constraintTop_toBottomOf="@+id/bread_pro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
