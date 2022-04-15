@@ -2,32 +2,30 @@ package com.example.health_diary.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.health_diary.R
-import com.example.health_diary.databinding.FragmentMainBinding
+import com.example.health_diary.databinding.FragmentFoodPlanBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainFragment : Fragment(R.layout.fragment_main) {
+class FoodPlanFragment : Fragment(R.layout.fragment_food_plan) {
 
-  private lateinit var binding: FragmentMainBinding
+  private lateinit var binding: FragmentFoodPlanBinding
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    binding = FragmentMainBinding.bind(view)
+    binding = FragmentFoodPlanBinding.bind(view)
 
     (activity as AppCompatActivity).supportActionBar?.title = "Food Plan"
 
     binding.foodpyramidPagebox.setOnClickListener {
-      val action = MainFragmentDirections.actionMainFragmentToFoodPyramidFragment()
+      val action = FoodPlanFragmentDirections.actionFoodPlanFragmentToFoodPyramidFragment()
       findNavController().navigate(action)
     }
 
     binding.caloriestrackerPagebox.setOnClickListener {
-      val action = MainFragmentDirections.actionMainFragmentToCaloriesTrackerFragment()
+      val action = FoodPlanFragmentDirections.actionFoodPlanFragmentToCaloriesTrackerFragment()
       findNavController().navigate(action)
     }
   }

@@ -9,10 +9,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.health_diary.databinding.FragmentHealthCategoryBinding
-import com.example.health_diary.databinding.FragmentMainBinding
-import com.example.health_diary.ui.MainFragment
-import com.example.health_diary.ui.MainFragmentDirections
-import com.google.android.gms.dynamic.SupportFragmentWrapper
+import com.example.health_diary.ui.FoodPlanFragment
 import com.google.firebase.firestore.*
 import com.google.firebase.firestore.EventListener
 import java.util.*
@@ -66,7 +63,7 @@ class HealthCategoryFragment : Fragment(R.layout.fragment_health_category) {
         }
 
         binding.forwardFoodPlanButton.setOnClickListener{
-            val intent = Intent(context, MainFragment::class.java)
+            val intent = Intent(context, FoodPlanFragment::class.java)
             startActivity(intent)
         }
 
